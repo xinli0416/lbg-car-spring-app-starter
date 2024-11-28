@@ -55,6 +55,7 @@ public class LoginFilter extends AbstractAuthenticationProcessingFilter{
 	protected void successfulAuthentication(HttpServletRequest req, HttpServletResponse res, FilterChain chain,
 	Authentication auth) throws IOException, ServletException {
 		AuthenticationService.addToken(res, auth.getName()); // our addToken code from our Auth service
+		System.out.println("test!!!!!!");
 	}
 
 
